@@ -18,8 +18,12 @@ section {
 /* Cards Section */
 #cardsSection,
 #result {
+  position: relative;
   justify-content: space-around;
-  min-height: 32vw;
+  /* height: 32vw; */
+  /* min-height: 250px; */
+  /* min-height: 32vw; */
+  /* max-height: 365px; */
 }
 
 .card {
@@ -37,6 +41,8 @@ section {
   outline: none;
   border: none;
   margin-top: 5vw;
+  position: relative;
+  margin-bottom: 2vw;
 }
 .card:hover {
   border: 2px solid #ccc;
@@ -44,8 +50,10 @@ section {
   max-width: 226.6px;
   height: 27vw;
   max-height: 307.8px;
-  transition: width 0.5s ease, height 0.5s ease, border-width 0.2s ease,
-    max-height 0.5s ease, max-width 0.5s ease;
+  /* transition: width 0.5s ease, height 0.5s ease, border-width 0.2s ease,
+    max-height 0.5s ease, max-width 0.5s ease; */
+    transition: all 0.5 ease;
+    margin-bottom: 0;
 }
 .zapdos {
   background: rgb(240, 181, 53);
@@ -104,7 +112,7 @@ img {
 }
 /* Input Section */
 #input {
-  margin: 5vw 0;
+  margin: 2vw 0;
 }
 #input article {
   display: flex;
