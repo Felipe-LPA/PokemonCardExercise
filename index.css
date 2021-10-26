@@ -2,39 +2,74 @@ body {
   display: flex;
   justify-content: center;
   font-size: 16px;
+  background-image: url(./Pokemon-bg.jpg);
+  background-position: center;
+  width: 100vw;
 }
 main {
   width: 90vw;
   display: flex;
   flex-direction: column;
-  margin-top: 5vw;
 }
 section {
   display: flex;
+  flex-wrap: wrap;
 }
 /* Cards Section */
 #cardsSection,
 #result {
-  justify-content: space-between;
+  justify-content: space-around;
+  min-height: 32vw;
 }
+
 .card {
   width: 18vw;
   height: 25vw;
-  min-width: 100px;
-  min-height: 140px;
+  min-width: 150px;
+  max-width: 204px;
+  min-height: 210px;
+  max-height: 285px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+  border: none;
+  margin-top: 5vw;
+}
+.card:hover {
+  border: 2px solid #ccc;
+  width: 20vw;
+  max-width: 226.6px;
+  height: 27vw;
+  max-height: 307.8px;
+  transition: width 0.5s ease, height 0.5s ease, border-width 0.2s ease,
+    max-height 0.5s ease, max-width 0.5s ease;
 }
 .zapdos {
-  background-color: yellow;
+  background: rgb(240, 181, 53);
+  background: linear-gradient(
+    0deg,
+    rgb(240, 128, 53, 0.863) 0%,
+    rgba(253, 244, 45, 1) 100%
+  );
 }
 .moltres {
-  background-color: red;
+  background: rgb(217, 74, 55);
+  background: linear-gradient(
+    0deg,
+    rgba(116, 23, 23, 0.863) 0%,
+    rgb(243, 9, 48) 100%
+  );
 }
 .articuno {
-  background-color: blue;
+  background: rgb(45, 10, 248);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 18, 204, 0.863) 0%,
+    rgb(0, 204, 255) 100%
+  );
 }
 .grey {
   background-color: #ccc;
@@ -47,20 +82,28 @@ img {
 }
 .info {
   width: 90%;
-  max-height: 50%;
+  max-height: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .info div {
   display: flex;
   justify-content: space-between;
   height: 20%;
+  padding: 0.5vw;
+  box-sizing: border-box;
 }
 .info div p {
-  font-size: calc(0.3rem + 1.2vw);
+  font-size: calc(0.7rem + 0.5vw);
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 /* Input Section */
 #input {
-  justify-content: center;
   margin: 5vw 0;
 }
 #input article {
@@ -68,21 +111,31 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 1vw;
+  
 }
 select {
-  font-size: 1.5rem;
+  font-size: calc(0.8rem + 0.6vw);
   width: 40%;
-  margin-right: 2%;
+  min-width: 110px;
   text-align: center;
+  height: 4vh;
+  box-sizing: border-box;
 }
 button {
-  font-size: 1rem;
-  height: 100%;
+  font-size: calc(0.8rem + 0.4vw);
+  height: 4vh;
   background-color: #000;
   color: #fff;
   border-radius: 5px;
+  min-width: 110px;
+  text-align: center;
+  box-sizing: border-box;
+
 }
 button:hover {
   background-color: #fff;
   color: #000;
+  transition: all 0.5s ease;
 }
