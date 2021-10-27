@@ -1,0 +1,1 @@
+# Realizada refatoração da versão 1 realizada anteriormente.
