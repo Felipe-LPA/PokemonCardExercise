@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: 16px;
-  background-image: url(./Pokemon-bg.jpg);
+  background-image: url('../img/Pokemon-bg.jpg');
   background-position: center;
   width: 100vw;
 }
@@ -20,10 +20,6 @@ section {
 #result {
   position: relative;
   justify-content: space-around;
-  /* height: 32vw; */
-  /* min-height: 250px; */
-  /* min-height: 32vw; */
-  /* max-height: 365px; */
 }
 
 .card {
