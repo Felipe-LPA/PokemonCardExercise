@@ -45,15 +45,13 @@ section {
   margin-bottom: 2vw;
 }
 .card:hover {
-  border: 2px solid #ccc;
   width: 20vw;
   max-width: 226.6px;
   height: 27vw;
   max-height: 307.8px;
-  /* transition: width 0.5s ease, height 0.5s ease, border-width 0.2s ease,
-    max-height 0.5s ease, max-width 0.5s ease; */
-    transition: all 0.5 ease;
-    margin-bottom: 0;
+  transition: all 0.5 ease;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 20px 0px #000;
 }
 .zapdos {
   background: rgb(240, 181, 53);
@@ -121,7 +119,6 @@ img {
   width: 100%;
   flex-wrap: wrap;
   gap: 1vw;
-  
 }
 select {
   font-size: calc(0.8rem + 0.6vw);
@@ -140,7 +137,6 @@ button {
   min-width: 110px;
   text-align: center;
   box-sizing: border-box;
-
 }
 button:hover {
   background-color: #fff;
